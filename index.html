@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colfax Says NO</title>
+    <style>
+        html {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            margin: 0;
+            margin: 0;
+            overflow: auto; /* Allow scroll */
+        }
+        canvas {
+            position: relative; /* Use normal document flow */
+        }
+        h3.time {
+            position: fixed;
+            top: -10px;
+            left: 10px;
+            color: white;
+            background-color: rgba(0,0,0,.85);
+            padding: 0.5em;
+        }
+        h3.cars {
+            position: fixed;
+            top: 25px;
+            left: 10px;
+            color: white;
+            background-color: rgba(0,0,0,.85);
+            padding: 0.5em;
+        }
+        .congestion {
+            position: fixed;
+            top: 89px;
+            left: 10px;
+            color: white;
+            background-color: rgba(0,0,0,.85);
+            padding: .25em .75em;
+            width: 160px;
+            white-space: pre;
+        }
+        h3 {
+            /* display: none; */
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.1.11/chance.min.js" integrity="sha512-Mvo/gaGprTVzN9i+swfStIsSkBkzMsTRgWdES5BuVoV5WP9/SfJgoR+GlQIYMS4RCf62DiAn/JR/Im3q/GHNNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <h3 class="time"></h3>
+    <h3 class="cars"></h3>
+    <div class="congestion"></div>
+    <script src="routes.js"></script>
+</body>
+</html>
